@@ -7706,14 +7706,15 @@ void beevc_machine_setup_test_servo (){
     beevc_wait(5000);
 
     // Verify E1 connection
-      // Test E1
-      beevc_machine_setup_test_hotend(1);
+    // Test E1
+    beevc_machine_setup_test_hotend(1);
 
     // Verify E2 connection
-      // Test E2
-      #if EXTRUDERS > 1
-        beevc_machine_setup_test_hotend(2);
-      #endif
+    // Test E2
+
+    // #if EXTRUDERS > 1
+    //   beevc_machine_setup_test_hotend(2);
+    // #endif
 
     // Verify hotbed connections
     beevc_machine_setup_test_hotbed();
