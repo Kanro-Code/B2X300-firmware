@@ -939,7 +939,7 @@
   // no leveling so no changes
 #elif (ENABLED(BEEVC_B2X300))
   //B2X300
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 4  // X offset: -left  +right  [of the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 18  // X offset: -left  +right  [of the nozzle]
   #define Y_PROBE_OFFSET_FROM_EXTRUDER 41  // Y offset: -front +behind [the nozzle]
   #define Z_PROBE_OFFSET_FROM_EXTRUDER -9   // Z offset: -below +above  [the nozzle]
 
