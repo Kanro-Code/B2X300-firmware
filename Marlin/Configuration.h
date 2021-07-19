@@ -232,7 +232,7 @@
 
 // This defines the number of extruders
 // :[1, 2, 3, 4, 5]
-#define EXTRUDERS 2
+#define EXTRUDERS 1
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
 #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
@@ -939,7 +939,7 @@
   // no leveling so no changes
 #elif (ENABLED(BEEVC_B2X300))
   //B2X300
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 18  // X offset: -left  +right  [of the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 4  // X offset: -left  +right  [of the nozzle]
   #define Y_PROBE_OFFSET_FROM_EXTRUDER 41  // Y offset: -front +behind [the nozzle]
   #define Z_PROBE_OFFSET_FROM_EXTRUDER -9   // Z offset: -below +above  [the nozzle]
 
@@ -1118,8 +1118,8 @@
   #define Z_MAX_POS 300
 // The size of the printbed for B2X300 with Y+ endstop
 #elif ENABLED(BEEVC_B2X300)
-  #define X_MIN_POS -16
-  #define X_MAX_POS 306
+  #define X_MIN_POS -2
+  #define X_MAX_POS 320
   #define X_BED_SIZE 300
   #define Y_MIN_POS -17
   #define Y_MAX_POS 222
