@@ -1118,8 +1118,8 @@
   #define Z_MAX_POS 300
 // The size of the printbed for B2X300 with Y+ endstop
 #elif ENABLED(BEEVC_B2X300)
-  #define X_MIN_POS -2
-  #define X_MAX_POS 320
+  #define X_MIN_POS 0
+  #define X_MAX_POS 322
   #define X_BED_SIZE 300
   #define Y_MIN_POS -17
   #define Y_MAX_POS 222

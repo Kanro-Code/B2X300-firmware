@@ -7408,19 +7408,19 @@ void beevc_machine_setup_test_hotend (uint8_t extruder){
   while(thermalManager.degHotend(active_extruder) < thermalManager.degTargetHotend(active_extruder)){
 
     // Checks for swapped hotend sensor/resistors
-      if (thermalManager.degHotend(extruder == 1 ? 1 : 0) > idle_temp){
-        lcd_self_test_wizard_show_screen(self_test_error_hotend_swap);
+      // if (thermalManager.degHotend(extruder == 1 ? 1 : 0) > idle_temp){
+      //   lcd_self_test_wizard_show_screen(self_test_error_hotend_swap);
 
-        // Disable heating
-        thermalManager.setTargetHotend(0, active_extruder);
+      //   // Disable heating
+      //   thermalManager.setTargetHotend(0, active_extruder);
 
-        // Loops to show error message and require a reset
-        while(1){
-          idle(true);
-        }
+      //   // Loops to show error message and require a reset
+      //   while(1){
+      //     idle(true);
+      //   }
 
-        break;
-      }
+      //   break;
+      // }
 
 
     lcdDrawUpdate = LCDVIEW_REDRAW_NOW;
