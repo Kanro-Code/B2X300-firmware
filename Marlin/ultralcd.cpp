@@ -2910,7 +2910,7 @@ void kill_screen(const char* lcd_msg) {
     defer_return_to_status = false;
 
     // Clears lcd text
-    lcd_setstatus("V0.2 1E E3D.");
+    lcd_setstatus("V0.4 1E E3D.");
 
     // Disables heating
     thermalManager.disable_all_heaters();
